@@ -1,7 +1,5 @@
 import pandas as pd
 import warnings
-# import seaborn as sns
-# import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.pipeline import Pipeline
@@ -66,12 +64,3 @@ if __name__ == "__main__":
 
 	print("\nFlair Detection with Title & URL Combined as Feature:")
 	train_test(TDATA.COMBINED,TDATA.FLAIR)
-
-	# sns.barplot(x='SCORE', y='FLAIR', data=TDATA)
-	# plt.show()
-
-	# sns.barplot(x='COMMENT_NOS', y='FLAIR', data=TDATA)
-	# plt.show()
-
-	# sns.barplot(x='RATIO', y='FLAIR', data=TDATA)
-	# plt.show()
